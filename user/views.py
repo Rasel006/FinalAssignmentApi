@@ -30,7 +30,7 @@ class RegisterViewSet(APIView):
             print(token)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             print(uid)
-            confirm_link = f"https://mdraselprotfolioapi.onrender.com/user/active/{uid}/{token}"
+            confirm_link = f"https://mdraselportfolioapi.onrender.com/user/active/{uid}/{token}"
             email_subject = "Confirm Your Mail"
             email_body = render_to_string('confirm_email.html', {'confirm_link':confirm_link})
 

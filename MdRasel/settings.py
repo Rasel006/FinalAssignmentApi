@@ -63,7 +63,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://mdraselportfolioapi.onrender.com']
 ROOT_URLCONF = 'MdRasel.urls'
 
 TEMPLATES = [
