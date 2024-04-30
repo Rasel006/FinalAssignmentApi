@@ -38,7 +38,7 @@ class RegisterViewSet(APIView):
             email.attach_alternative(email_body, "text/html")
             email.send()
 
-            return Response("Check Your Mail To Confirm")
+            return Response("Check Your Email To Confirm")
         return Response(serializer.errors)
     
 
